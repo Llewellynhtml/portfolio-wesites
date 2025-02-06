@@ -1,29 +1,57 @@
-
 .resumeSection {
-    margin: 20px;
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.resumeTitle {
+  text-align: center;
+  color: #333;
+  font-size: 2rem;
+}
+
+.resumeLink {
+  display: inline-block;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.resumeLink:hover {
+  background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+  .resumeSection {
+    padding: 15px;
   }
-  
+
   .resumeTitle {
-    text-align: center;
-    color: #333;
+    font-size: 1.8rem;
   }
-  
+
   .resumeLink {
-    display: inline-block;
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 10px;
-    text-align: center;
+    padding: 8px 18px;
   }
-  
-  .resumeLink:hover {
-    background-color: #45a049;
+}
+
+@media (max-width: 480px) {
+  .resumeSection {
+    padding: 10px;
   }
-  
+
+  .resumeTitle {
+    font-size: 1.6rem;
+  }
+
+  .resumeLink {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+}

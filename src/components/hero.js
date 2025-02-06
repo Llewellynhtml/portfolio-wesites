@@ -28,7 +28,7 @@ const Hero = () => {
 
           <hr className={styles.goldHr}></hr>
 
-          <button className={styles.downloadButton}>Download CV</button>
+          <a href="/My Resume (1).pdf"><button className={styles.downloadButton}>Download CV</button></a>
         </div>
         <div className={styles.heroImage}>
           <img src={heroImage} alt="Hero" />
