@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FaGithub, FaLinkedin } from 'react-icons/fa'; 
 import styles from './Navbar.module.css'; 
-import navimage from './Images/LSG.5.png';
+import navimage from './images/LSG.5.png';
 
 const Navbar = () => {
   const location = useLocation(); 
