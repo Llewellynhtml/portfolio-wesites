@@ -1,0 +1,92 @@
+.progressSection {
+  padding: 90px;
+  background-color:rgba(128, 128, 128, 0.133);
+  display: flex;
+  justify-content: center;
+  height: 700px;
+}
+
+.cardContainer {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 2000px;
+  width: 1500px;
+}
+
+.progressCard {
+  flex: 1 1 calc(33.33% - 25px);
+  max-width: 520px;
+  background: #ffffff;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  transition: transform 0.4s ease-in-out, border 0.4s ease-in-out,
+    box-shadow 0.4s ease-in-out;
+}
+
+.progressCard:hover {
+  transform: translateY(-10px);
+  border: 10px solid gold;
+}
+
+.progressIcon {
+  font-size: 80px;
+  color: #ffd700;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.progressCard:hover .progressIcon {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.9));
+}
+
+.progressTitle {
+  font-size: 30px;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.progressDescription {
+  font-size: 25px;
+  color: black;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.progressButton {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  background: none;
+  border: 2px solid transparent;
+  cursor: pointer;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: color 0.4s ease-in-out, border 0.4s ease-in-out,
+    box-shadow 0.4s ease-in-out;
+}
+
+.progressButton:hover {
+  color: black;
+  background-color: gold;
+  border: 2px solid gold;
+  box-shadow: 0 0 25px rgba(255, 215, 0, 1), 0 0 40px rgba(255, 215, 0, 0.9);
+  text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+  .progressCard {
+    flex: 1 1 calc(50% - 25px);
+  }
+}
+
+@media (max-width: 768px) {
+  .progressCard {
+    flex: 1 1 100%;
+  }
+}

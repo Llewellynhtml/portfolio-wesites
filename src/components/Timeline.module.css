@@ -1,0 +1,129 @@
+
+.timelineSection {
+    padding: 60px 20px;
+    background-color: whitesmoke;
+}
+
+.heading {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #222;
+}
+
+
+.timelineContainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: auto;
+    width: 1600px;
+}
+
+
+.timelineContainer::before {
+    content: "";
+    position: absolute;
+    left: 50px; 
+    width: 4px;
+    height: 100%;
+    background: #dcdcdc;
+    z-index: 1; 
+}
+
+
+.timelineItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+    position: relative;
+}
+
+
+.timelineDate {
+    font-size: 17px;
+    font-weight: bold;
+    color: #354052;
+    width: 180px;
+    text-align: right;
+    padding-left: 100px;
+}
+
+
+.timelineCircle {
+    width: 30px;
+    height: 30px;
+    background-color: #ffcc00;
+    border-radius: 50%;
+    position: absolute;
+    left: 50px;
+    transform: translateX(-50%);
+    z-index: 2; 
+}
+
+
+.timelineContent {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 1000px;
+    transition: transform 0.3s ease-in-out;
+    margin-left: 80px; 
+    border: 2px solid transparent; 
+    transition: transform 0.4s ease-in-out, 
+                border 0.4s ease-in-out, 
+                box-shadow 0.4s ease-in-out;               
+}
+
+
+.timelineContent:hover {
+    transform: translateY(-10px);
+    border: 10px solid gold;
+    box-shadow: 0 0 30px rgba(255, 215, 0, 1), 
+                0 0 50px rgba(255, 215, 0, 0.9), 
+}
+
+
+.title {
+    font-size: 40px;
+    font-weight: bold;
+    color: #000000;
+}
+
+
+.company {
+    font-size: 26px;
+    color:gold;
+    border-bottom: darkgoldenrod;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 40px;
+}
+
+
+.description {
+    font-size: 20px;
+    color: #666;
+    line-height: 1.6;
+}
+
+
+@media (max-width: 768px) {
+    .timelineContainer::before {
+        left: 40px; 
+    }
+
+    .timelineCircle {
+        left: 40px; 
+    }
+
+    .timelineDate {
+        width: 140px;
+    }
+
+    .timelineContent {
+        max-width: 100%;
+        margin-left: 60px;
+    }
+}
