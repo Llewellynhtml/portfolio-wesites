@@ -1,5 +1,5 @@
 .nav {
-  background-color:whitesmoke;
+  background-color: whitesmoke;
   color: white;
   padding: 0.5px;
   display: flex;
@@ -28,9 +28,24 @@
   font-size: 23px;
 }
 
+.navItem::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  width: 0;
+  height: 3px;
+  background-color: #ffc107;
+  transition: all 0.3s ease-in-out;
+  transform: translateX(-50%);
+}
+
+.navItem:hover::after {
+  width: 100%;
+}
+
 .navItem:hover {
-  color: #fff200;
-  transform: scale(1.1);
+  color: #ffc107;
 }
 
 .navItem:last-child {
@@ -38,8 +53,6 @@
 }
 
 .active {
-  box-shadow: 0 0 5px 4px rgb(255, 255, 0);
-  background-color: rgb(255, 255, 0);
   border-radius: 5px;
   color: black;
 }

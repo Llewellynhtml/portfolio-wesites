@@ -7,7 +7,6 @@ const Hero = () => {
     <section id="about" className={styles.aboutSection}>
       <div className={styles.aboutContent}>
         <div className={styles.textContent}>
-
           <h4 className={styles.subTitle}>I'm Lesego</h4>
 
           <div className={styles.paragraph}>
@@ -28,7 +27,9 @@ const Hero = () => {
 
           <hr className={styles.goldHr}></hr>
 
-          <a href="/My Resume (1).pdf"><button className={styles.downloadButton}>Download CV</button></a>
+          <a href="/My Resume (1).pdf">
+            <button className={styles.downloadButton}>Download CV</button>
+          </a>
         </div>
         <div className={styles.heroImage}>
           <img src={heroImage} alt="Hero" />
