@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styles from "./progress.module.css";
 
 const Progress = () => {
@@ -25,6 +26,7 @@ const Progress = () => {
 
   return (
     <div className={styles.progressSection}>
+      <h2>My Working Process</h2>
       <div className={styles.cardContainer}>
         {steps.map((step, index) => (
           <div key={index} className={styles.progressCard}>
@@ -35,6 +37,10 @@ const Progress = () => {
           </div>
         ))}
       </div>
+
+      <Link to="/projects" className={styles.seeAllLink}>
+        <button className={styles.seeAllButton}>See All</button>
+      </Link>
     </div>
   );
 };
